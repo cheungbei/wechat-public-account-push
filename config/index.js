@@ -77,7 +77,7 @@ const USER_CONFIG = {
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: 'https://weathernew.pae.baidu.com/weathernew/pc?query=%E5%B1%B1%E8%A5%BF%E5%A4%AA%E5%8E%9F%E5%A4%A9%E6%B0%94&srcid=4982',
+      openUrl: 'https://ms.mbd.baidu.com/r/NBDruwVrk4?f=cp&u=044bb27b744de965',
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
@@ -278,24 +278,11 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 3,
+  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
-  /** 你现在可以随心增加你认为的所有的需要纪念的日子啦！
-   * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
-   * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }}
-   * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    { keyword: 'love_day', date: '2022-09-08' },
-    // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
-    // 你可以不断按格式往下增加
-    // ...
-  ],
+
 
   /** 插槽 */
 

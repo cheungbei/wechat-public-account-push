@@ -45,7 +45,7 @@ const USER_CONFIG = {
     horoscope: true,
 
     /** 生日消息和节日消息 */
-    birthdayMessage: false,
+    birthdayMessage:true,
 
     // 学生课表
     courseSchedule: false,
